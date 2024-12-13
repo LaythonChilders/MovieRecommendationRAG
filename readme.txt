@@ -32,12 +32,10 @@ Step-by-Step Setup
     python3 -m pip install chromadb
     python3 -m pip install ollama
 
-    IN SOME CASES YOU MAY NEED TO RUN THIS COMMAND IF ONE OF THE ABOVE FAILS REFERENCING "WHEEL":
-    pip install wheel
-    OR:
-    pip3 install wheel
-    OR:
-    python3 -m pip install wheel
+    IF CHROMADB GIVES AN ERROR MENTIONING FAILED TO BUILD WHEEL:
+    On Mac try running this in terminal and then installing chromadb
+    export HNSWLIB_NO_NATIVE=1
+
 
 3. Download Ollama Models
     Once Ollama is installed, you need to download the models required by the app. In your terminal or command prompt, run the following commands to download the models:
