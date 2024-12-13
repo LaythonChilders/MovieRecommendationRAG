@@ -1,0 +1,130 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2820
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\froman\fcharset0 Times-Bold;\f1\froman\fcharset0 Times-Roman;\f2\fmodern\fcharset0 Courier;
+}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red0\green0\blue233;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;\cssrgb\c0\c0\c93333;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid101\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid2}
+{\list\listtemplateid3\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid201\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid3}
+{\list\listtemplateid4\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid301\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid4}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}{\listoverride\listid4\listoverridecount0\ls4}}
+\margl1440\margr1440\vieww18780\viewh16680\viewkind0
+\deftab720
+\pard\pardeftab720\sa298\partightenfactor0
+
+\f0\b\fs36 \cf0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Movie AI Recommendation App - README\
+\pard\pardeftab720\sa298\partightenfactor0
+\cf0 Overview\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1\b0\fs24 \cf0 This project is a Movie Recommendation web app built using 
+\f0\b Flask
+\f1\b0 , 
+\f0\b Ollama
+\f1\b0 , and 
+\f0\b ChromaDB
+\f1\b0 . The app allows users to enter a movie-related prompt, which is processed to retrieve and explain a movie recommendation. The system uses Ollama models for natural language processing and movie-related embeddings stored in a ChromaDB collection.\
+\pard\pardeftab720\sa298\partightenfactor0
+
+\f0\b\fs36 \cf0 Prerequisites\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1\b0\fs24 \cf0 Before running the app, ensure you have the following installed:\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls1\ilvl0
+\f0\b \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Python 3.8+
+\f1\b0  (Download from {\field{\*\fldinst{HYPERLINK "https://www.python.org/downloads/"}}{\fldrslt \cf3 \ul \ulc3 \strokec3 python.org}})\
+\ls1\ilvl0
+\f0\b \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 pip
+\f1\b0  (Python package manager; should be installed with Python)\
+\ls1\ilvl0
+\f0\b \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Ollama
+\f1\b0  (for model access) - {\field{\*\fldinst{HYPERLINK "https://ollama.com/"}}{\fldrslt \cf3 \ul \ulc3 \strokec3 ollama.com}}\
+\pard\pardeftab720\sa240\partightenfactor0
+\cf0 You will also need to download the necessary models for Ollama to function correctly. This can be done through the Ollama CLI after installation.\
+\pard\pardeftab720\sa298\partightenfactor0
+
+\f0\b\fs36 \cf0 Step-by-Step Setup\
+\pard\pardeftab720\sa280\partightenfactor0
+
+\fs28 \cf0 1. Install Python\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1\b0\fs24 \cf0 If you don't already have Python installed, download it from the official website and follow the installation instructions based on your operating system.\
+\pard\pardeftab720\sa280\partightenfactor0
+
+\f0\b\fs28 \cf0 2. Install Required Libraries\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1\b0\fs24 \cf0 Ensure you have 
+\f2\fs26 pip
+\f1\fs24  installed. Open your terminal or command prompt and run the following commands to install the necessary dependencies:
+\f2\fs26 \
+\pard\pardeftab720\partightenfactor0
+\cf0 pip install flask\
+pip install chromadb\
+pip install ollama\
+\
+\pard\pardeftab720\sa280\partightenfactor0
+
+\f0\b\fs28 \cf0 3. Download Ollama Models\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1\b0\fs24 \cf0 Once Ollama is installed, you need to download the models required by the app. In your terminal or command prompt, run the following commands to download the models:
+\f2\fs26 \
+\pard\pardeftab720\partightenfactor0
+\cf0 ollama pull mistral-nemo\
+ollama pull nomic-embed-text\
+\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1\fs24 \cf0 These commands pull the necessary models for generating and embedding text for movie recommendations.\
+\pard\pardeftab720\sa280\partightenfactor0
+
+\f0\b\fs28 \cf0 4. Set Up the Flask Application\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1\b0\fs24 \cf0 Open 
+\f2\fs26 movieRecommendationSystem.py
+\f1\fs24  in your preferred code editor. The Flask app will be set up and ready to run. Ensure that the 
+\f2\fs26 SECRET_KEY
+\f1\fs24  is set to a secure value for your application\'92s session management.\
+\pard\pardeftab720\sa280\partightenfactor0
+
+\f0\b\fs28 \cf0 5. Running the Application\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1\b0\fs24 \cf0 In your terminal, navigate to the project directory and run the following command to start the Flask server:
+\f2\fs26 \
+\pard\pardeftab720\partightenfactor0
+\cf0 python3 movieRecommendationSystem.py\
+\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1\fs24 \cf0 This will start the Flask development server. By default, it will be accessible at 
+\f2\fs26 http://127.0.0.1:5000/
+\f1\fs24  in your web browser.\
+\pard\pardeftab720\sa280\partightenfactor0
+
+\f0\b\fs28 \cf0 6. Using the Application\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls2\ilvl0
+\f1\b0\fs24 \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 When you visit the app in your browser, you will see a prompt input field. Enter a movie-related request like \'93I want a movie with love and romance,\'94 and click the 
+\f0\b Submit
+\f1\b0  button.\
+\ls2\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 The app will process the input, query the ChromaDB, and return a movie recommendation along with an explanation.\
+\ls2\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 You can clear the chat history by clicking the 
+\f0\b Clear Chat
+\f1\b0  button.\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls3\ilvl0\cf0 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls4\ilvl0\cf0 \
+}
