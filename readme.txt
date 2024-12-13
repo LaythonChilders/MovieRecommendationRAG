@@ -20,10 +20,24 @@ Step-by-Step Setup
     pip install chromadb
     pip install ollama
 
-    If those don't work:
+    OR:
+
+    pip3 install flask
+    pip3 install chromadb
+    pip3 install ollama
+
+    OR:
+
     python3 -m pip install flask
     python3 -m pip install chromadb
     python3 -m pip install ollama
+
+    IN SOME CASES YOU MAY NEED TO RUN THIS COMMAND IF ONE OF THE ABOVE FAILS REFERENCING "WHEEL":
+    pip install wheel
+    OR:
+    pip3 install wheel
+    OR:
+    python3 -m pip install wheel
 
 3. Download Ollama Models
     Once Ollama is installed, you need to download the models required by the app. In your terminal or command prompt, run the following commands to download the models:
