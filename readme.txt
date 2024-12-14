@@ -11,30 +11,37 @@ Before running the app, ensure you have the following installed:
 You will also need to download the necessary models for Ollama to function correctly. This can be done through the Ollama CLI after installation.
 
 Step-by-Step Setup
+
 1. Install Python
     If you don't already have Python installed, download it from the official website and follow the installation instructions based on your operating system.
+
 2. Install Required Libraries
     Ensure you have pip installed. Open your terminal or command prompt and run the following commands to install the necessary dependencies:
 
-    pip install flask
-    pip install chromadb
-    pip install ollama
+    	pip install flask
+    	pip install chromadb
+    	pip install ollama
 
     OR:
 
-    pip3 install flask
-    pip3 install chromadb
-    pip3 install ollama
+    	pip3 install flask
+    	pip3 install chromadb
+    	pip3 install ollama
 
     OR:
 
-    python3 -m pip install flask
-    python3 -m pip install chromadb
-    python3 -m pip install ollama
+    	python3 -m pip install flask
+    	python3 -m pip install chromadb
+    	python3 -m pip install ollama
 
     IF CHROMADB GIVES AN ERROR MENTIONING FAILED TO BUILD WHEEL:
-    On Mac try running this in terminal and then installing chromadb
-    export HNSWLIB_NO_NATIVE=1
+    On Mac try running this in terminal and then installing chromadb:
+    
+	export HNSWLIB_NO_NATIVE=1
+
+    On Windows try the first answer here:
+    
+	https://stackoverflow.com/questions/73969269/error-could-not-build-wheels-for-hnswlib-which-is-required-to-install-pyprojec
 
 
 3. Download Ollama Models
@@ -49,6 +56,10 @@ These commands pull the necessary models for generating and embedding text for m
     In your terminal, navigate to the project directory and run the following command to start the Flask server:
 
     python3 movieRecommendationSystem.py
+
+    OR
+
+    python movieRecommendationSystem.py
 
     This will start the Flask development server. By default, it will be accessible at http://127.0.0.1:5000/ in your web browser.
     
